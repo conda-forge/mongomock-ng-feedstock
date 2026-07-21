@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "7.9.0"
+  version: "7.9.1"
 
 package:
   name: mongomock-ng
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/mongomock-ng/mongomock_ng-${{ version }}.tar.gz
-  sha256: 05dda26f764366e0b08a70811df9c11d6ca5603832cb286641fbc21432cffb07
+  sha256: 325f210158b6f6143da48f7cc5099533075a1f10665a972402bd91f83f5b1633
 
 build:
   number: 0
