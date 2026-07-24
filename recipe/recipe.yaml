@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "7.9.1"
+  version: 7.9.3
 
 package:
   name: mongomock-ng
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/mongomock-ng/mongomock_ng-${{ version }}.tar.gz
-  sha256: 325f210158b6f6143da48f7cc5099533075a1f10665a972402bd91f83f5b1633
+  sha256: cf6335d7840890b00649bbb2a0a5633a5365700796cfe9238571f7bc6d856d33
 
 build:
   number: 0
@@ -26,8 +26,6 @@ requirements:
     - packaging
     - pytz
     - sentinels
-    - pandas
-
 tests:
   - python:
       imports:
@@ -35,7 +33,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   summary: Replacement fake pymongo stub for testing simple MongoDB-dependent code
